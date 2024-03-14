@@ -36,7 +36,7 @@ export default function TextForm(props) {
     <button type="button" className="btn btn-primary mb-3 mx-1" onClick={onClickClear}>Clear</button>
     <div className="container">
         <h3>Text details</h3>
-        <p>{text.split(" ").filter((element)=>{return element.length!==0;}).length} words and {text.length} Character</p>
+        <p>{text.split(/\s+/).filter((element)=>{return element.length!==0;}).length} words and {text.length} Character</p>
     </div>
   </div>
   )
